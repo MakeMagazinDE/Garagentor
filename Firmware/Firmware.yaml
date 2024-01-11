@@ -1,0 +1,40 @@
+# Default Bus for the BME280 sensor (SCL = 1, SDA = D2)
+i2c:
+ sda: GPIO4
+ scl: GPIO5
+ scan: true
+ id: sensor_bus
+# BME280 sensor definition (Address = 0x76)
+sensor:
+ - platform: bme280
+ temperature:
+ name: "Garage Temperatur"
+ oversampling: 16x
+ pressure:
+ name: "Garage Luftdruck"
+ humidity:
+ name: "Garage Luftfeuchtigkeit"
+ address: 0x76
+ update_interval: 60s
+# Button configuration (D6)
+output:
+ - platform: gpio
+ pin: GPIO12
+ id: door_open
+button:
+ - platform: output
+ name: "Tor öffnen / schließen"
+ output: door_open
+ duration: 500ms
+# Input for reed relais (door open / closed - D7)
+binary_sensor:
+ - platform: gpio
+ pin:
+ number: GPIO13
+ inverted: false
+ mode:
+ input: true
+ pullup: true
+ name: "Garage offen"
+ device_class: garage_door
+ 

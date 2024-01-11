@@ -1,0 +1,42 @@
+views:
+ - title: Garage
+ path: garage
+ icon: mdi:garage
+ badges: []
+ cards:
+ - type: vertical-stack
+ cards:
+ - show_name: true
+ show_icon: true
+ type: button
+ tap_action:
+ action: toggle
+ entity: button.esphome_garage_tor_offnen_schliessen
+ name: Garagentor öffnen / schließen
+ show_state: false
+ icon: ''
+ - type: entity
+ entity: binary_sensor.esphome_garage_garage_offen
+ state_color: true
+ name: Garagentor Status
+ - type: history-graph
+ entities:
+ - entity: binary_sensor.esphome_garage_garage_offen
+ title: Garagentor
+ - type: vertical-stack
+ cards:
+ - graph: line
+ type: sensor
+ detail: 1
+ entity: sensor.esphome_garage_garage_temperatur
+ name: Temperatur
+ - graph: line
+ type: sensor
+ detail: 1
+ entity: sensor.esphome_garage_garage_luftfeuchtigkeit
+ name: Luftfeuchtigkeit
+ - graph: line
+ type: sensor
+ detail: 1
+ name: Luftdruck
+ entity: sensor.esphome_garage_garage_luftdruck
