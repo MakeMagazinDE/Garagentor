@@ -11,4 +11,4 @@ Mithilfe dieser Schaltung binden Sie eine Garagentor-Schließanlage in Home Assi
 ![Picture](https://github.com/MakeMagazinDE/Garagentor/blob/main/Einbau%20in%20Aufputzdose.jpg)
 
 Den vollständigen Artikel mit der Bauanleitung gibt es in der **[Make-Ausgabe 1/24 ab Seite XX](https://www.heise.de/select/make/2019/1/1551100253897264)** zu lesen. 
-Hier gibt es die Materialliste, Konfigurationsdateien und Python-Skripte für das Internet-Radio zum Download.
+Hier gibt es die Firmware für das Wemos-D1-mini-Board.
