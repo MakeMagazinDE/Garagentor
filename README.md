@@ -4,7 +4,7 @@ Maker Media GmbH
 *** 
 
 # Garagentor
-herrkömmlichen Garagentor-Antrieb smarthome-Tauglich machen mit ESP8266
+macht einen herkömmlichen Garagentor-Antrieb Smarthome-tauglich
 
 Mithilfe dieser Schaltung binden Sie eine Garagentor-Schließanlage in Home Assistant ein und können das Tor dann von daheim oder aus dem Auto öffnen, schließen und kontrollieren. Außerdem erfahren Sie, welche Temperatur und Luftfeuchtigkeit in der Garage herrschen.
 
